@@ -16,7 +16,7 @@ export function Skills() {
 
       <ul className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {skills.map((skill, i) => {
-          const Icon = icons[i % icons.length];
+          const Icon = icons[i % icons.length] ?? ShieldCheck;
           return (
             <Reveal as="li" key={skill.title} delay={i * 70}>
               <div className="group glass-panel h-full rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40">
