@@ -24,11 +24,11 @@ export const profile = {
 };
 
 export const contact = {
-  email: "your.email@example.com", // placeholder
-  phone: "+91 00000 00000", // placeholder
-  linkedin: "https://linkedin.com/in/your-profile", // placeholder
-  github: "https://github.com/your-username", // placeholder
-  instagram: "https://instagram.com/your-handle", // placeholder
+  email: "dhananjaid230@gmail.com",
+  phone: "9539862098",
+  linkedin: "https://www.linkedin.com/in/dhananjai-d-7a3164311/",
+  github: "https://github.com/dhananjai04",
+  instagram: "https://www.instagram.com/_d_hananjai_d_/",
 };
 
 export const skills = [
