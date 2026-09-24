@@ -1,4 +1,4 @@
-import { Download, FileText } from "lucide-react";
+import { Download, Eye, FileText } from "lucide-react";
 import { profile } from "@/data/portfolio";
 import { Reveal } from "./Reveal";
 
@@ -15,14 +15,25 @@ export function Resume() {
           <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground">
             A full overview of my education, internships and projects in one document.
           </p>
-          <a
-            href={profile.resumeUrl}
-            download
-            className="glow-ring mt-9 inline-flex items-center justify-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground transition-transform duration-300 hover:-translate-y-0.5"
-          >
-            <Download className="size-4" />
-            Download Resume
-          </a>
+          <div className="mt-9 flex flex-col items-center gap-3 sm:flex-row">
+            <a
+              href={profile.resumeViewUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glow-ring inline-flex items-center justify-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground transition-transform duration-300 hover:-translate-y-0.5"
+            >
+              <Eye className="size-4" />
+              View Resume
+            </a>
+            <a
+              href={profile.resumeUrl}
+              download
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-border bg-secondary/40 px-7 py-3.5 text-sm font-semibold text-foreground backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:bg-secondary"
+            >
+              <Download className="size-4" />
+              Download
+            </a>
+          </div>
         </div>
       </Reveal>
     </section>

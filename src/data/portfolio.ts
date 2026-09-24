@@ -21,6 +21,8 @@ export const profile = {
   },
   resumeUrl:
     "/__l5e/assets-v1/14934a1d-e58a-4b0f-8f9b-d3ca8e740883/Dhananjai_D_Resume.docx",
+  resumeViewUrl:
+    "/__l5e/assets-v1/18e27c39-f465-4792-8b07-4c0b9241d84b/Dhananjai_D_Resume.pdf",
 };
 
 export const contact = {
