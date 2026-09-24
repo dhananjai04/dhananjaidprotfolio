@@ -1,5 +1,6 @@
 import { Activity, CheckCircle2, Cpu, Rocket, UserRound } from "lucide-react";
 import { projects } from "@/data/portfolio";
+import biosyncAsset from "@/assets/biosync-dashboard.jpeg.asset.json";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
 
@@ -35,6 +36,19 @@ export function Projects() {
                 <p className="mt-7 max-w-3xl text-base leading-relaxed text-muted-foreground">
                   {project.problem}
                 </p>
+
+                {project.name === "BioSync" ? (
+                  <figure className="mt-8 overflow-hidden rounded-2xl border border-border bg-background/40">
+                    <img
+                      src={biosyncAsset.url}
+                      alt="BioSync real-time health monitoring dashboard"
+                      className="aspect-video w-full object-cover"
+                    />
+                    <figcaption className="border-t border-border px-5 py-3 text-xs text-muted-foreground">
+                      BioSync live health and environment monitoring dashboard
+                    </figcaption>
+                  </figure>
+                ) : null}
 
                 <div className="mt-8">
                   <h4 className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">

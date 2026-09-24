@@ -1,5 +1,6 @@
 import { ArrowRight, Download, GraduationCap, ShieldCheck, Sparkles } from "lucide-react";
 import { profile } from "@/data/portfolio";
+import portraitAsset from "@/assets/dhananjai-portrait.jpeg.asset.json";
 import { Reveal } from "./Reveal";
 
 export function Hero() {
@@ -19,6 +20,14 @@ export function Hero() {
 
       <div className="relative mx-auto max-w-6xl px-5 pb-24 pt-36 sm:px-8 sm:pb-32 sm:pt-44">
         <Reveal className="flex flex-col items-center text-center">
+          <div className="glow-ring mb-8 size-40 overflow-hidden rounded-full border-2 border-primary/50 bg-surface p-1 sm:size-48">
+            <img
+              src={portraitAsset.url}
+              alt="Dhananjai D"
+              className="size-full rounded-full object-cover object-[center_36%]"
+            />
+          </div>
+
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary/40 px-4 py-1.5 text-xs text-muted-foreground backdrop-blur">
             <Sparkles className="size-3.5 text-primary" />
             B.Tech CSE Student · MBITS · 2028
