@@ -1,4 +1,4 @@
-import { ArrowRight, Download, GraduationCap, ShieldCheck, Sparkles } from "lucide-react";
+import { ArrowRight, Download, Eye, GraduationCap, ShieldCheck, Sparkles } from "lucide-react";
 import { profile } from "@/data/portfolio";
 import portraitAsset from "@/assets/dhananjai-portrait.jpeg.asset.json";
 import { Reveal } from "./Reveal";
@@ -54,12 +54,21 @@ export function Hero() {
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
             </a>
             <a
+              href={profile.resumeViewUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-border bg-secondary/40 px-6 py-3.5 text-sm font-semibold text-foreground backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:bg-secondary sm:w-auto"
+            >
+              <Eye className="size-4" />
+              View Resume
+            </a>
+            <a
               href={profile.resumeUrl}
               download
               className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-border bg-secondary/40 px-6 py-3.5 text-sm font-semibold text-foreground backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:bg-secondary sm:w-auto"
             >
               <Download className="size-4" />
-              Download Resume
+              Download
             </a>
           </div>
         </Reveal>
