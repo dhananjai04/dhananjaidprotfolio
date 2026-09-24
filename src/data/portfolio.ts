@@ -19,8 +19,8 @@ export const profile = {
     institution: "Mar Baselios Institute of Technology and Science (MBITS)",
     graduation: "Expected graduation 2028",
   },
-  // Replace with the real file once available (place it in /public).
-  resumeUrl: "/resume.pdf",
+  resumeUrl:
+    "/__l5e/assets-v1/14934a1d-e58a-4b0f-8f9b-d3ca8e740883/Dhananjai_D_Resume.docx",
 };
 
 export const contact = {
