@@ -1,4 +1,4 @@
 - [x] Add portrait image in a circular frame
 - [x] Add BioSync screenshot to the project showcase
 - [x] Update email, phone, and social links
-- [ ] Verify desktop and mobile presentation
+- [x] Verify desktop and mobile presentation
