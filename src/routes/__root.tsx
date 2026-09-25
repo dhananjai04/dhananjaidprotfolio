@@ -11,7 +11,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
-import { initAnalytics } from "../lib/firebase";
+import { initAnalytics } from "../lib/analytics";
 
 function NotFoundComponent() {
   return (
@@ -133,7 +133,7 @@ function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 
   useEffect(() => {
-    void initAnalytics();
+    initAnalytics();
   }, []);
 
 
