@@ -2,3 +2,4 @@
 - [x] Add BioSync screenshot to the project showcase
 - [x] Update email, phone, and social links
 - [x] Verify desktop and mobile presentation
+- [ ] Replace the profile photo with the new close-cropped portrait and verify it loads
