@@ -55,9 +55,15 @@ export function Footer() {
   return (
     <footer className="border-t border-border">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-5 py-10 sm:flex-row sm:justify-between sm:px-8">
-        <p className="text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Dhananjai D
-        </p>
+        <address className="text-center text-sm not-italic leading-relaxed text-muted-foreground sm:text-left">
+          USHUS(H)
+          <br />
+          IRINGOLE (PO)
+          <br />
+          PERUMBAVOOR
+          <br />
+          683545
+        </address>
         <ul className="flex items-center gap-3">
           {items.map((item) => (
             <li key={item.label}>
