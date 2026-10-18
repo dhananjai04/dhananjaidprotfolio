@@ -1,5 +1,6 @@
 import { Briefcase } from "lucide-react";
 import { experience } from "@/data/portfolio";
+import corizoCertificate from "@/assets/corizo-internship-certificate.jpeg.asset.json";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
 
@@ -25,6 +26,25 @@ export function Experience() {
               <p className="mt-2 text-sm text-muted-foreground">
                 {item.role} · {item.mode}
               </p>
+              {item.company === "Corizo" ? (
+                <figure className="mt-6 overflow-hidden rounded-lg border border-border bg-background/40">
+                  <a
+                    href={corizoCertificate.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open Corizo Cyber Security training certificate"
+                  >
+                    <img
+                      src={corizoCertificate.url}
+                      alt="Corizo certificate of training awarded to Dhananjai D for completing Cyber Security training from 05 June to 05 July 2025"
+                      className="h-auto w-full"
+                    />
+                  </a>
+                  <figcaption className="border-t border-border px-4 py-3 text-xs text-muted-foreground">
+                    Corizo · Cyber Security training · 05 Jun–05 Jul 2025
+                  </figcaption>
+                </figure>
+              ) : null}
             </div>
           </Reveal>
         ))}

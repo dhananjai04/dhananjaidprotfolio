@@ -3,3 +3,4 @@
 - [x] Update email, phone, and social links
 - [x] Verify desktop and mobile presentation
 - [x] Replace the profile photo with the new close-cropped portrait and verify it loads
+- [x] Add the Corizo Cyber Security training certificate to the internship section
