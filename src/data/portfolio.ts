@@ -87,6 +87,10 @@ export type Project = {
   problem: string;
   contribution: string;
   future: string[];
+  presentation?: {
+    viewUrl: string;
+    downloadUrl: string;
+  };
 };
 
 export const projects: Project[] = [
@@ -115,5 +119,38 @@ export const projects: Project[] = [
       "Longer-term data history and trends",
       "Smarter thresholds that adapt per user",
     ],
+  },
+  {
+    name: "RFID-Based Smart Attendance System",
+    summary: "Arduino-powered student identification and attendance tracking.",
+    stack: [
+      "Arduino UNO R3",
+      "RC522 RFID reader and cards",
+      "16×2 LCD display",
+      "DS3231 real-time clock",
+      "Buzzer and LED indicators",
+    ],
+    features: [
+      "Recognizes registered students using unique RFID card IDs",
+      "Tracks student entry and exit with repeated scans",
+      "Displays student names and attendance status on the LCD",
+      "Uses a buzzer and LEDs for scan feedback and invalid-card alerts",
+      "Designed to record attendance date and time with an RTC module",
+    ],
+    problem:
+      "Manual roll calls and paper registers take time, can introduce errors, and make it difficult to track student entry and exit. This project automates identification and attendance recording with RFID cards and an Arduino-based system.",
+    contribution:
+      "Designed and assembled the hardware circuit, connecting the Arduino UNO, RFID reader, LCD, RTC, buzzer, and LED indicators.",
+    future: [
+      "Store attendance records on an SD card or database",
+      "Upload records to a cloud platform for online monitoring",
+      "Create automated attendance reports and a teacher-facing mobile app",
+    ],
+    presentation: {
+      viewUrl:
+        "/__l5e/assets-v1/01459b95-f2f2-4217-be1f-26ba4d5433e2/RFID_Smart_Attendance_Presentation.pdf",
+      downloadUrl:
+        "/__l5e/assets-v1/0ab9b419-4e74-4c74-9ef4-5b5f9c0f80d1/RFID_Smart_Attendance_Presentation.pptx",
+    },
   },
 ];

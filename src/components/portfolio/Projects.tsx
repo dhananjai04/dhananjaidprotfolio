@@ -1,6 +1,7 @@
-import { Activity, CheckCircle2, Cpu, Rocket, UserRound } from "lucide-react";
+import { Activity, CheckCircle2, Cpu, Download, Eye, Rocket, UserRound } from "lucide-react";
 import { projects } from "@/data/portfolio";
 import biosyncAsset from "@/assets/biosync-dashboard.jpeg.asset.json";
+import { Button } from "@/components/ui/button";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
 
@@ -36,6 +37,27 @@ export function Projects() {
                 <p className="mt-7 max-w-3xl text-base leading-relaxed text-muted-foreground">
                   {project.problem}
                 </p>
+
+                {project.presentation ? (
+                  <div className="mt-7 flex flex-wrap gap-3">
+                    <Button asChild className="gap-2">
+                      <a
+                        href={project.presentation.viewUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Eye />
+                        View presentation
+                      </a>
+                    </Button>
+                    <Button asChild variant="outline" className="gap-2">
+                      <a href={project.presentation.downloadUrl} download>
+                        <Download />
+                        Download PowerPoint
+                      </a>
+                    </Button>
+                  </div>
+                ) : null}
 
                 {project.name === "BioSync" ? (
                   <figure className="mt-8 overflow-hidden rounded-2xl border border-border bg-background/40">
