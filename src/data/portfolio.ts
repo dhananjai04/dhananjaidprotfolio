@@ -1,3 +1,6 @@
+import rfidPresentationPptx from "@/assets/rfid-attendance-presentation.pptx.asset.json";
+import rfidPresentationPdf from "@/assets/rfid-attendance-presentation.pdf.asset.json";
+
 /**
  * Single source of truth for the portfolio content.
  * Update contact details, links and projects here.
@@ -147,10 +150,8 @@ export const projects: Project[] = [
       "Create automated attendance reports and a teacher-facing mobile app",
     ],
     presentation: {
-      viewUrl:
-        "/__l5e/assets-v1/01459b95-f2f2-4217-be1f-26ba4d5433e2/RFID_Smart_Attendance_Presentation.pdf",
-      downloadUrl:
-        "/__l5e/assets-v1/0ab9b419-4e74-4c74-9ef4-5b5f9c0f80d1/RFID_Smart_Attendance_Presentation.pptx",
+      viewUrl: rfidPresentationPdf.url,
+      downloadUrl: rfidPresentationPptx.url,
     },
   },
 ];
