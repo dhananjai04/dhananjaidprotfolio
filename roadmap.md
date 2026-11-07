@@ -6,4 +6,4 @@
 - [x] Add the Corizo Cyber Security training certificate to the internship section
 - [x] Replace the footer copyright line with the provided address
 - [x] Add the RFID attendance project and presentation viewing/download options
-- [ ] Verify the project card and presentation links in the preview
+- [x] Verify the project card and presentation links in the preview
